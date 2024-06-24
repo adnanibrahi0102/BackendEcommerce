@@ -23,6 +23,7 @@ export const registerController = async (req, res) => {
         message: "User already exists ! Please Login",
       });
     }
+    
 
     //hashing password
     const hashedPassword = await hashPassword(password);
